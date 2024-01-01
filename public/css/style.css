@@ -1,4 +1,51 @@
-.body{
-    background-color:Amarillo hsl(50, 82%, 53%);
+*{
+    font-family: roboto;
 
+
+  text-decoration: none;
+  color:#666;;
+}
+.home{
+    background-color:#EAC926;;
+
+}
+
+.nav ul
+{    list-style: none;
+
+}
+.nav{
+    list-style: none;
+}
+
+.texto{
+font-weight: 24px;
+}
+.precios{
+    font-weight: 18px;
+}
+.descuentos{
+    font-weight: 16px;
+}
+
+.descripcion{
+    font-weight: 16px;
+}
+.txt{
+    text-align: center;
+}
+
+#subtitulo{
+ margin-left: 40px;
+ }
+
+
+.imagenpequena {
+    width: 400px; 
+    height: 40px; 
+}
+
+.icons{
+    font-size: 2em;
+    margin-right: 10px; 
 }
