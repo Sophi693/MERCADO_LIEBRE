@@ -1,8 +1,9 @@
 *{
     font-family: roboto;
   text-decoration: none;
-  color:#666;;
- 
+  color:#666;
+  margin: 0px;
+
 }
 
 .home{
@@ -32,54 +33,41 @@ background-color:#EAC926;
 {    list-style: none;
 
 }
-.menu
-{
-color: black;
-text-align: center;
- background-color:var(blue);
-padding:3%;
+.menuhab{
+
+ background-color: blue;
+ border-radius: 5px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 50px; 
+ height: 50px; 
+ 
+
 
 }
 
-.texto{
-font-weight: 24px;
-text-align: center;
 
-}
-.precios{
-    font-weight: 18px;
-    text-align: center;
-    display: block;
-    margin-bottom: 10px;
-    border-top: 1px solid #ebebeb; 
-     padding: 15px;
-}
-
-.descuentos{
-    font-weight: 16px;
-    text-align: center;
-    display: block;
-    margin-bottom: 10px;
-    border-top: 1px solid #ebebeb; 
-    padding: 15px;
+.container{
+ 
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px; 
+    padding: 20px;
+  
 
 }
 
-.descripcion{
-    font-weight: 16px;
-    text-align: center;
-    display: block;
-    margin-bottom: 10px;
-    border-top: 1px solid #ebebeb; 
-     padding: 15px;
-}
-.txt{
-    text-align: center;
-}
 
-.imagenpequena {
-    width: 80; 
-    height: 40px; 
+
+.imgml{
+  width: 180; 
+    height: 180px;  
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .icons{
@@ -87,15 +75,143 @@ text-align: center;
     margin-right: 10px; 
 }
 
+
+
+
+.searchicon{
+  background-color: white;
+  display: inline-block;
+  padding: 1px;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.searchbar{
+  margin: 10px;
+}
+
+
+
+
+main{
+  background-color: #ebebeb;
+
+  margin-bottom: 10px;
+}
+
+/*Productos*/
+
+.containerprod:hover{
+  box-shadow: 0px 0px 10px rgb(100,100,100);
+
+}
+
 .img{
    
-    width: 120px;
-    height: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    width: 200px;
+    height:200px;
+
 }
-.centrado{
-    align-items: center;
-  justify-content: center;  
+.infoprod{
+    border-top: solid  0.5px  #ebebeb;
+    background-color: white;
 }
+
+.descripcion{
+  display: none;
+    font-weight: 16px;
+    margin: 0px;
+}
+.containerprod:hover .descripcion {
+display: block;
+}
+
+
+.precios{
+    font-weight: 18px;
+   margin-top: 10px;
+  display:inline-block
+}
+.descuentos{
+    display:inline-block;
+    font-weight: 16px;
+  color:  #39b54a;
+  
+
+}
+.rotating-icon {
+  color: #63E6BE;
+  transition: transform 0.5s ease;
+}
+
+.rotating-icon:hover {
+  transform: rotate(-90deg);
+}
+
+
+
+
+
+/*Seccion basado en tu ultima vista*/
+.item-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    justify-content: center; 
+    text-align: center;  
+    gap: 15px;
+   
+  }
+
+/*Seccion de Ofertas*/
+  .texto{
+    font-weight: 24px;
+    text-align: center;
+    
+    }
+    .item-2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;  
+        justify-content: center; 
+        text-align: center; 
+        gap: 15px;  
+    }
+
+  
+   
+    /*footer*/
+    .txt{
+      display: flex;
+      flex-direction:row;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    /*------------------------*/
+    @media (max-width: 769px) {
+      .container{
+     
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 300px; 
+        padding: 20px;
+      
+    
+    }
+    }
+
+    @media (max-width: 769px) {
+      .txt{
+        text-align: center;
+        margin-top: 10px;
+        flex-direction:column;
+       
+      }
+  
+    }
+
+    
